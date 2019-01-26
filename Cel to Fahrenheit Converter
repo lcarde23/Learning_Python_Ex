@@ -6,3 +6,5 @@ CelIn = input("Please enter Celsius temperature: ")
 Faren = 32 + (int(CelIn) * (9/5))
 
 print(Faren)
+
+# Improve by making a GUI and can do both Cel to Faren and inverse.
