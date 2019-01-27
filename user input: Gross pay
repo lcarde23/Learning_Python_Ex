@@ -1,0 +1,17 @@
+# Ask user for value of hours worked and the rate they are payed per hour,
+# Hours pass 40 get payed at 1.5 times the entered rate. Print gross pay
+
+Hours = input ("Please enter hours worked: ")
+Rate = input("Please enter pay rate: ")
+iHours = int(Hours)
+fRate = float(Rate)
+
+
+if iHours > 40:
+    xHours = iHours - 40  # extra hours pass 40
+    xPay = xHours * (fRate * 1.5) # extra pay pass 40
+    print (((iHours - xHours) * fRate) + xPay)
+else:
+    print(iHours * fRate)
+    
+# improve by adding try except step if user inputs str. 1/27/19
