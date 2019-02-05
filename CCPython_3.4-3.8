@@ -1,0 +1,38 @@
+#make a list and invite people to dinner, add and remove people, 
+invited = ['Bruce Lee', 'Alfonso Cardenas Ramos','Jimmy Connors',]
+msg = " estas invitado a cenar con la familia Cardenas"
+
+#loop through the list and invite everyone in it
+for i in invited:
+    print(i + msg)
+
+print("Bruce Lee esta ocupado y no puedo ir a la cena.\n")
+invited[0] = "Victor Yturbe"
+print("Encontramos una mesa mas grande y vamos a invitar a mas personas")
+
+#add new people to the list
+invited.insert(0,"Manuel Maldonado Baragan")
+invited.insert(2, 'Cesar Manuel Maldonado')
+invited.append("Miguel Hidalgo y Costilla")
+
+#loop through again with the new people
+for i in invited:
+    print(i + msg)
+
+print("\nUnfortunately we can only invite two guests to tonights dinner.\n")
+
+msg2 = ", there is no room for you sorry :("
+msg3 = ", you are still invited to attend the dinner."
+
+#loop through and pop the last people of the list and send them a message there is no room for them.
+while len(invited) > 2:
+    uninvited = invited.pop()
+    print(uninvited + msg2)
+print("\n")
+
+#invite the last two
+for i in invited:
+        print(i + msg3)
+
+
+
