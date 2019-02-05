@@ -1,0 +1,22 @@
+#Crash Course Python 3.8
+
+vacSpots = ['japan', 'korea', 'mexico', 'canada', 'united kingdom']
+print("Original")
+print(vacSpots)
+print('alphabeical order')
+print(sorted(vacSpots))
+print('original')
+print(vacSpots)
+print('reverse alphabetical order')
+print(sorted(vacSpots, reverse = True))
+print('original')
+print(vacSpots)
+print("Permanently reverses the order")
+vacSpots.reverse()
+print(vacSpots)
+print('reverses the order again')
+vacSpots.reverse()
+print(vacSpots)
+print('used sort() to rever the order')
+vacSpots.sort(reverse= True)
+print(vacSpots)
