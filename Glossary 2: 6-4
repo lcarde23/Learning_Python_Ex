@@ -1,0 +1,21 @@
+# create a dicitonary, then add more key-value pairs, then loop through it
+# and print each terms with its definition.
+
+terms = {'Dictionary' : 'Collection of items that are connected by key-value pairs.',
+         'Integer' : 'Whole number variable.',
+         'List' : 'Literally a list of shit, ordered in a particular order.',
+         'Tuple' : 'A list with items that can not be changed unless explicitly done so.',
+         'If Statement' : 'Tests to see if a particular condition is true',
+         }
+
+
+terms['User input'] = 'Asks the user for input, all input is saved as a string.'
+terms['While loops'] = 'Repeats a block of code until a condition is met.'
+terms['Variables'] = 'Words that represent a space in memory where something has been allocated.'
+terms['Strings'] = 'A variable that stores a collection of characters.'
+terms['float'] = 'A variable that stores a numerical value that has a decimal point.'
+
+# make a new line print the term, followed by its definition.
+for term in terms.keys():
+    print('\n' + term)
+    print(' :' + terms[term])
