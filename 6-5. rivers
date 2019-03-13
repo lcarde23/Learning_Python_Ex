@@ -1,0 +1,13 @@
+#looping through a dicitonary
+rivers = {'nile' : 'egypt', 'rio grande' : 'mexico', 'colorado' : 'united states',}
+
+for river, state in rivers.items():
+    print("The " + river.title() + " runs through " + state.title() + '.\n')
+
+print("\nThe rivers in this data set are:")
+for river in rivers.keys():
+     print(river.title())
+print("\nThe countries that are present in this data are:")
+for state in rivers.values():
+    print(state.title())
+
