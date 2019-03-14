@@ -1,0 +1,17 @@
+# make a list of people who should take the favorite language poll
+# then check if they already did and if they didnt ask them to take it.
+
+favorite_languages = {
+    'jen': 'python',
+    'tevin': 'c#',
+    'ali': 'swift',
+    'phil': 'python',
+    }
+# should probabaly use a more descriptive variable name instead of names/ name
+names = ['Marisol', 'Kevin', 'Alfonsini', 'Ali', 'Tevin',]
+
+for name in names:
+    if name.lower() in favorite_languages:
+        print('Thank you ' + name.title() + ' for taking the poll.')
+    else:
+        print(name.title() + ' please take the poll.')
