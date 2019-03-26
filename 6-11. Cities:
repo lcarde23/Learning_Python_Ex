@@ -1,0 +1,26 @@
+# kinda the same as previous 2, should focus more on making response neater like the commented out version
+cities = {
+    'los angeles' : {'country' : 'usa', 'population' : '4 million', 'fact' : 'Inhabitants are called Angelenos'},
+    'mexico city' : {'country' : 'mexico', 'population' : '8.9 million', 'fact' : 'built on a lake'},
+    'tokyo' : {'country' : 'japan', 'population' : '9.2 million', 'fact' : 'great for tax-free shopping'}
+}
+
+msg = "Some facts and fun facts about "
+# initial response
+for city, info in cities.items():
+    print("\n" + msg + city.title() + ' are:')
+    for details in info:
+        print(info[details].capitalize())
+
+# nicer looking response
+
+#for city, info in cities.items():
+#    country = info['country'].title()
+#    population = info['population']
+#    mountains = info['nearby mountains'].title()
+
+# Didn't align it properly just copy and pasted this version for future reference
+
+#    print("\n" + city.title() + " is in " + country + ".")
+#    print("  It has a population of about " + str(population) + ".")
+#    print("  The " + mountains + " mountains are nearby.")
