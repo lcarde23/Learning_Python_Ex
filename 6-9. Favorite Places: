@@ -1,0 +1,13 @@
+# loop through a dictionary that has lists and print everything
+favorite_places = {
+    'jen': ['japan', 'korea'],
+    'ken': ['korea'],
+    'alen': ['japan','algeria'],
+    }
+
+
+
+for name, places in favorite_places.items():
+    print('\n' + name.title() + "'s favorite places are:")
+    for place in places:
+        print(place.title())
