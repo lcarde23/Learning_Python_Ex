@@ -1,0 +1,9 @@
+#quick guessing game, just using a WHILE loop for first time
+message = ''
+
+while message != 'quit':
+    message = input("Guess the number! It's between 0 and 10 \n")
+    if message == '8':
+        print("Darn you guessed the number! ")
+        message = 'quit'
+    print('Wrong guess :(\nTry Again! ')
