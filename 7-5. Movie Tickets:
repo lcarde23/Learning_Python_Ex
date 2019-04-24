@@ -1,0 +1,21 @@
+# 7-5 solution, Loop that asks users age then depending on age prints their corresponding ticket price
+
+event = True
+prompt = ("Please enter your age and we'll tell you current ticket price.")
+prompt += ('\nPlease enter "quit" when finished.\n')
+
+while event:
+
+    msg = input(prompt)
+
+    if msg == 'quit':
+        print('Thank you! have a nice day!')
+        event = False
+    elif int(msg) < 3:
+        print("Free of charge!\n")
+
+    elif int(msg) >= 3 and int(msg) <= 12:
+        print('Price is $10!\n')
+
+    elif int(msg) > 12:
+        print("Price is $15\n")
