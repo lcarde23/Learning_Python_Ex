@@ -1,0 +1,74 @@
+# 7-6. Three Exits:  write 3 different versions of 7-4 or 7-5 1. Conditional test in the while statement to stop loop
+#   2. Use an active variable to control how long the loop runs.
+#   3. Use a break statement  to exit the loop when the user enters a 'quit' value.
+
+
+# Version 1
+
+#prompt = ("Please enter your age and we'll tell you current ticket price.")
+#prompt += ('\nPlease enter "quit" when finished.\n')
+#msg = '' \
+      ''
+#while msg!= 'quit':
+
+#    msg = input(prompt)
+
+#    if msg == 'quit':
+#        print('Thank you! have a nice day!')
+#        break;
+#    elif int(msg) < 3:
+#        print("Free of charge!\n")
+
+#    elif int(msg) >= 3 and int(msg) <= 12:
+#        print('Price is $10!\n')
+
+#    elif int(msg) > 12:
+#        print("Price is $15\n")
+
+
+
+# Version 2
+
+#event = True
+#prompt = ("Please enter your age and we'll tell you current ticket price.")
+#prompt += ('\nPlease enter "quit" when finished.\n')
+
+#while event:
+
+#    msg = input(prompt)
+
+#    if msg == 'quit':
+#        print('Thank you! have a nice day!')
+#        event = False
+#    elif int(msg) < 3:
+#        print("Free of charge!\n")
+
+#    elif int(msg) >= 3 and int(msg) <= 12:
+#        print('Price is $10!\n')
+
+#    elif int(msg) > 12:
+#        print("Price is $15\n")
+
+
+
+# Version 3
+
+#prompt = ("Please enter your age and we'll tell you current ticket price.")
+#prompt += ('\nPlease enter "quit" when finished.\n')
+
+#while True:
+
+#    msg = input(prompt)
+
+#    if msg == 'quit':
+#        print('Thank you! have a nice day!')
+#        break;
+#    elif int(msg) < 3:
+#        print("Free of charge!\n")
+
+#    elif int(msg) >= 3 and int(msg) <= 12:
+#        print('Price is $10!\n')
+
+#    elif int(msg) > 12:
+#        print("Price is $15\n")
+
