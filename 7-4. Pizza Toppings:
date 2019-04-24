@@ -1,0 +1,18 @@
+# Solution to 7-4, Loop that keeps going until user decides to stop. Input goes into a list then printed.
+
+PizzaTop = []
+event = True
+msg = ''
+msg2 = "Thank you, we'll add your topping to your pizza!"
+
+while event:
+    msg = input('Please enter your pizza toppings one at a time.\nPlease enter "quit" once finished \n')
+
+    if msg == 'quit':
+        print ('These are your currently selected toppings!')
+        print (PizzaTop)
+        event = False
+
+    else:
+        PizzaTop.append(msg)
+        print()
