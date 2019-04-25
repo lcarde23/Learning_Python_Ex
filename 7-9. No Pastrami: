@@ -1,0 +1,22 @@
+# 7-9. No Pastrami, modify 7-8 to include pastrami 3 times and then check for it and remove it
+
+# List with sandwich orders and an empty list to move things into
+sandwich_orders = ["Tuna", "Pastrami", "Buffalo", "Beef Roast", "Pastrami",
+                   'Turkey', "Pastrami"]
+finished_orders = []
+
+# As long as there are items in sandwich_orders this loop will keep going, the item that gets removed
+# Is saved into current_samich and a statement is printed
+print('Attention valued customer, we are currently out of Pastrami. We are sorry for the inconvenience!\n')
+while sandwich_orders:
+      # This loop will keep going until 'Pastrami' is not found in the list, removes 'Pastrami' from list
+      while 'Pastrami' in sandwich_orders:
+            sandwich_orders.remove("Pastrami")
+      # This happens as long as first while loop is true aka still has items
+      current_samich = sandwich_orders.pop()
+      print("Your " + current_samich + " sandwich is ready!")
+
+      finished_orders.append(current_samich)
+
+print("\nAll sandwiches completed:")
+print(finished_orders)
