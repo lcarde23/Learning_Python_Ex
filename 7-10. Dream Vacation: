@@ -1,0 +1,21 @@
+# 7-10 Poll users about their dream vacation, then print the result
+
+users = {}
+Continue = True
+
+while Continue:
+      name = input("Please enter your name")
+      location = input('If you could visit any place in the world where would it be? ')
+
+      users[name] = location
+      print ("Thanks for the input!")
+
+      msg = input("Would you like to keep adding input? yes/no\n")
+      if msg == 'no':
+            Continue = False;
+      else:
+            continue;
+
+print('\n--- Results ---\n')
+for name, location in users.items():
+      print(name.title() + ' would like to visit ' + location.title() + '.')
