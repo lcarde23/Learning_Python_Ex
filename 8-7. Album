@@ -1,0 +1,16 @@
+#8-7. Create function that builds a dictionary describe a music album, then return the info, make 3 dictionaries, print
+#     Add optional parameter that stores number of tracks
+def make_album(artist_name, album_title, tracks= ''):
+      album = {'Name': artist_name, 'Title': album_title,}
+      if tracks:
+            album['tracks'] = tracks
+      return album
+
+music = make_album('Linkin Park', 'Hybrid Theory')
+print(music)
+
+music = make_album('Hombres G', 'Los mejores exitos')
+print(music)
+
+music = make_album('Emancipator', 'Safe in the high mountains', '12')
+print(music)
