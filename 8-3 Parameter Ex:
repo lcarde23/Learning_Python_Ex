@@ -1,0 +1,30 @@
+# Read the star comments ***
+
+# ***  Positional Arguments example  ***
+#def describe_pet(animal_type, pet_name):
+#      """""Display information about a pet."""
+#      print("\nI have a " + animal_type + ".")
+#      print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+#describe_pet("Dog", "Chloe")
+
+
+# ***  Keyword Arguments  ***
+#def describe_pet(animal_type, pet_name):
+#      """""Display information about a pet."""
+#      print("\nI have a " + animal_type + ".")
+#      print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+# ***  Explicitly tell python where each argument is going to go  ***
+#describe_pet(animal_type="Dog", pet_name="Chloe")
+
+
+# ***  Default values  argument is going to have some that will always stay the same  ***
+# Can still change animal_type if parameter gets entered for it ex: describe_pet("snowball", "Cat") or done explicitly
+
+#def describe_pet(pet_name,animal_type ='dog'):
+#      """""Display information about a pet."""
+#      print("\nI have a " + animal_type + ".")
+#      print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+#describe_pet('willie')
