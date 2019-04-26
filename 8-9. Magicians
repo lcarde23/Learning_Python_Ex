@@ -1,0 +1,9 @@
+# 8-9. Make a list of magicians, pass it to a function, print the list
+
+magicians = ["Houdini", 'Alakazam', 'Gandolf', 'Hairy Wizard']
+
+def show_magicians(names):
+      for magician in magicians:
+            print(magician)
+
+show_magicians(magicians)
