@@ -1,0 +1,14 @@
+# 8-1 / 8-2  Name and call a simple function
+
+# Creates the 'aFunction' all it does is print the same msg everytime its called.
+def aFunction():
+      msg = 'Going to learn some useful information about fnctions.'
+      print(msg)
+# Calls the function
+aFunction()
+
+# Defines favorite_book that takes a argument called 'title' and prints a msg
+def favorite_book(title):
+      print("One of my favorite books is " + title + '.')
+
+favorite_book("The Wise Man's Fear")
