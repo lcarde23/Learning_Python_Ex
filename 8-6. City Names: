@@ -1,0 +1,13 @@
+#8-6. function that takes a city and country and returns a formatted string.
+
+def city_country(city, country):
+      location = city + ', ' + country
+      return location
+location = city_country("Seattle", 'united states')
+print(location.title())
+
+location = city_country('Mexico City', 'mexico')
+print(location.title())
+
+location = city_country('tokyo', 'japan')
+print(location.title())
