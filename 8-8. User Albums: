@@ -1,0 +1,23 @@
+#8-8. Create function that builds a dictionary describe a music album, then return the info, make 3 dictionaries, print
+#     Add optional parameter that stores number of tracks
+def make_album(artist_name, album_title, tracks= ''):
+      album = {'Name': artist_name, 'Title': album_title,}
+
+      return album
+
+while True:
+      print("Please enter the artist name and title.")
+      print('Please enter "quit" at anytime when done')
+
+      a_name = input("Artist name: ")
+      if a_name == 'quit':
+            break
+
+      title = input('Album Title: ')
+      if title == 'quit':
+            break
+
+      album_info = make_album(a_name, title)
+      print('\nAlbum Information:\n')
+      print(album_info)
+
