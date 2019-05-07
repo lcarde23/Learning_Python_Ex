@@ -1,0 +1,24 @@
+# 8-14. Cars    function that stores info in a dictionary
+
+def make_car(manufacturer, model, **info):
+
+    car_info = {}
+    car_info['Manufacturer'] = manufacturer.title()
+    car_info['Model'] = model.title()
+
+    for key, value in info.items():
+        car_info[key.title()] = value.title()
+
+    return car_info
+
+car = make_car('mazda', '3',
+               Color= 'Silver')
+print(car)
+
+car = make_car('mustang', 'Gran Turbo',
+               color= 'Green',
+               Design= "Racing Stripes",
+               Windows= "Tinted",
+               transmission= 'automatic')
+
+print(car)
