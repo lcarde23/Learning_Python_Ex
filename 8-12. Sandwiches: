@@ -1,0 +1,11 @@
+# 8-12. Sandwiches  write a function that accepts a list, one parameter should be arbitrary
+# '*ingredients' accepts a variable amount of input in function call
+def hacer_sandwich(size, *ingredients):
+    print('One ' + size + ' Sandwich being prepared!')
+    print('\nToppings include: ')
+    
+    # use ingredient to loop through all input entered into ingredients and then print it
+    for ingredient in ingredients:
+        print('- ' + ingredient)
+
+sandwich = hacer_sandwich('Large', 'Lettuce', 'Ham', 'Mayo')
