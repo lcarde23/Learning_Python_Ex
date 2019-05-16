@@ -1,0 +1,18 @@
+# 9-1. Restaurant: make a restaurant class,
+
+class Restaurant():
+    """Restaurant class with two attributes"""
+    def __init__(self, restaurant_name, cusine_type):
+        """Initialize restaurant_name and cusine_type"""
+        self.restaurant_name = restaurant_name
+        self.cusine_type = cusine_type
+
+    def describe_restaurant(self):
+        print(self.restaurant_name + ' specializes in: ' + self.cusine_type)
+
+    def open_restuarant(self):
+        print(self.restaurant_name + ' is open for business!')
+
+restaurant = Restaurant("Luis' Kitchen", "The Best Food" )
+restaurant.describe_restaurant()
+restaurant.open_restuarant()
