@@ -1,4 +1,4 @@
-# 9-1. Restaurant: make a restaurant class,
+# 9-1. Restaurant: make a restaurant class, added 9-2 (just creating new instances)
 
 class Restaurant():
     """Restaurant class with two attributes"""
@@ -16,3 +16,9 @@ class Restaurant():
 restaurant = Restaurant("Luis' Kitchen", "The Best Food" )
 restaurant.describe_restaurant()
 restaurant.open_restuarant()
+
+restaurant = Restaurant("Kabuki", "Japanese Food")
+restaurant.describe_restaurant()
+
+restaurant = Restaurant("Gen", "KoreanBBQ")
+restaurant.describe_restaurant()
