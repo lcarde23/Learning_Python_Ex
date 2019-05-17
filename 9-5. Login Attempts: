@@ -1,0 +1,41 @@
+# 9-5. Login Attempts:
+
+class User():
+    """User class with multiple attr"""
+    def __init__(self, first_name, last_name, city, age, gender):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.city = city
+        self.age = age
+        self.gender = gender
+        self.fullname = self.first_name + ' ' + self.last_name
+        self.login_attempts = 0
+
+    def describe_user(self):
+        print( '\n--- User Summary ---')
+        print('Name: ' + self.fullname.title() + '\nCity: ' + self.city.title() + '\nAge: ' + self.age + '\nGender: ' + self.gender.title())
+
+    def greet_user(self):
+        print('\nHello ' + self.fullname.title() + '! Welcome aboard!')
+
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+
+luis = User('Luis', 'Cardenas', 'Glendale', '25', 'Male')
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+luis.increment_login_attempts()
+print(luis.login_attempts)
+
+luis.reset_login_attempts()
+print(luis.login_attempts)
