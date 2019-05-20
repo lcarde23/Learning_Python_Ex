@@ -1,0 +1,33 @@
+# 9-7. Admin: inherit from another class same as 9-6 mostly
+class User():
+    """User class with multiple attr"""
+    def __init__(self, first_name, last_name, city, age, gender):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.city = city
+        self.age = age
+        self.gender = gender
+        self.fullname = self.first_name + ' ' + self.last_name
+
+    def describe_user(self):
+        print( '\n--- User Summary ---')
+        print('Name: ' + self.fullname.title() + '\nCity: ' + self.city.title() + '\nAge: ' + self.age + '\nGender: ' + self.gender.title())
+
+    def greet_user(self):
+        print('\nHello ' + self.fullname.title() + '! Welcome aboard!')
+
+class Admin(User):
+    """special type of user"""
+    def __init__(self, first_name, last_name, city, age, gender):
+        """
+        Initialize parent class attributes
+        Then initialize Admin() attributes
+        """
+        super().__init__(first_name, last_name, city, age, gender)
+        self.privileges = ['can add post', 'can delete post', 'can use ban hammer']
+
+    def show_privileges(self):
+        print(self.privileges)
+
+luis = Admin('Luis', 'Cardenas', 'Glendale', '25', 'Male')
+luis.show_privileges()
