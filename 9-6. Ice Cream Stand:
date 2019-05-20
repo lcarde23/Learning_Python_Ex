@@ -1,0 +1,31 @@
+# 9-6. Ice Cream Stand: inherit from another class, call a method
+
+class Restaurant():
+    """Restaurant class with two attributes"""
+    def __init__(self, restaurant_name, cusine_type):
+        """Initialize restaurant_name and cusine_type"""
+        self.restaurant_name = restaurant_name
+        self.cusine_type = cusine_type
+
+class IceCreamStand(Restaurant):
+    """child class of Restaurant()"""
+    
+    def __init__(self, restaurant_name, cusine_type):
+        """
+        Initializes attributes from the parent class.
+        Then initializes attributes speific to the IceCreamStand() Class
+        """
+
+        super().__init__(restaurant_name, cusine_type)
+        self.flavors = ['Vanilla', 'Chocolate', 'Mango', 'StrawBerry']
+
+    def get_flavors(self):
+        """Prints out the ice cream flavors available"""
+        print(self.flavors)
+
+my_restaurant = Restaurant('Food Here', 'All the food')
+my_icecream = IceCreamStand('Ice Cream Patrol', 'Ice Cream')
+my_icecream.get_flavors()
+
+
+
