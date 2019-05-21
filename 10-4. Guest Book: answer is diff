@@ -1,0 +1,18 @@
+#10-4   answer has code in different order ? google / investigate
+# Flag to start and end program
+start = True
+filename = 'guest_book.txt'
+name = ''
+print("Type 'stop' when done.")
+
+# open/create filename and open it in append mode since we will write in it multiple times
+with open(filename, 'a') as file_object:
+
+    while start:
+            name = input('Please enter you name: ')
+            if name == 'stop':
+                start = False
+            else:
+                print('Welcome ' + name + ' !!')
+                file_object.write(name + ' has just input their name.sdfdsfs\n')
+
