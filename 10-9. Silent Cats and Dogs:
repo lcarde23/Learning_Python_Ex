@@ -1,0 +1,19 @@
+#10-9 open two files that have animal names and print them. fail silently 'pass'
+
+try:
+    filename = 'cats.txt'
+
+
+# open/create filename and open it in append mode since we will write in it multiple times
+    with open(filename, 'r') as file_object:
+        info = file_object.read()
+
+    with open('dogs.txt', 'r') as file_object:
+        info2 = file_object.read()
+
+except FileNotFoundError:
+    pass
+
+else:
+    print(info)
+    print(info2)
