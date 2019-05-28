@@ -1,0 +1,12 @@
+#10-10. open two files and count  how many times the word "the" appears
+
+
+with open('Frankenstein.txt', 'r') as file_object:
+    words = file_object.read()
+    franNum = words.lower().count('the')
+
+with open('Dracula.txt', 'r') as file_object:
+    words = file_object.read()
+    dracNum = words.lower().count('the')
+
+print(franNum + dracNum)
